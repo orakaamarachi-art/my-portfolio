@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Online CV</title>
+    <style>
+        /* Modern Reset and Variables */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --primary-color: #24292e; /* GitHub Dark Gray */
+            --accent-color: #007acc; /* Tech Blue */
+            --card-bg: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        /* Sections common styling */
+        section {
+            margin-bottom: 35px;
+        }
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        /* Skills Pills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-pill {
+            background: #e1e4e8;
+            color: var(--primary-color);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Projects List */
+        .project-card {
+            background: #fafafa;
+            border: 1px solid #e1e4e8;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .project-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+        .project-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact & Social Links */
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .github-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .github-btn:hover {
+            background-color: #555;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER Section -->
+        <header>
+            <h1>Ihuoma</h1>
+            <p>Frontend Developer / Tech Enthusiast</p>
+        </header>
+
+        <!-- SKILLS Section -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <span class="skill-pill">HTML5</span>
+                <span class="skill-pill">CSS3</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">Git & GitHub</span>
+                <span class="skill-pill">Java</span>
+                <span class="skill-pill">Python</span>
+            </div>
+        </section>
+
+        <!-- PROJECTS Section -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            
+            <div class="project-card">
+                <h3>My Personal Website</h3>
+                <p>A responsive multi-page website showcasing core text formatting, custom script features, and interactive components built from scratch.</p>
+                <a class="project-link" href="#" target="_blank">🔗 View Code on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>NileEventApp</h3>
+                <p>An application layout designed to organize, track, and display local events smoothly.</p>
+                <a class="project-link" href="#" target="_blank">🔗 View Code on GitHub</a>
+            </div>
+        </section>
+
+        <!-- GITHUB LINK Section -->
+        <section id="github">
+            <h2>GitHub Profile</h2>
+            <p>Check out my complete code repositories, contribution graphs, and developer activity:</p>
+            <a href="https://github.com/your-username" class="github-btn" target="_blank">🐱 Visit My GitHub Profile</a>
+        </section>
+
+        <!-- CONTACT Section -->
+        <section id="contact">
+            <h2>Contact Info</h2>
+            <div class="contact-info">
+                <p>📧 <strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>💼 <strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/yourprofile</a></p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
